@@ -13,8 +13,8 @@ import $ from "jquery";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import GoldenLayout from 'golden-layout';
-import UserList from '../../components/UserList/index.js'
-import UserDetail from '../../components/UserDetail/index.js'
+import StockList from '../../components/StockList/index.js'
+import StockDetail from '../../components/StockDetail/index.js'
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -25,20 +25,20 @@ export default class HomePage extends React.Component { // eslint-disable-line r
       content: [{
         type: 'row',
         content: [{
-          title: 'Users',
+          title: 'Stocks',
           type:'react-component',
-          component: 'user-list'
+          component: 'stock-list'
         },{
-          title: 'User Detail',
+          title: 'Stock Detail',
           type:'react-component',
-          component: 'user-detail'
+          component: 'stock-detail'
         }]
       }]
     };
 
     var myLayout = new GoldenLayout( config );
-    myLayout.registerComponent( 'user-list', UserList );
-    myLayout.registerComponent( 'user-detail', UserDetail );
+    myLayout.registerComponent( 'stock-list', StockList );
+    myLayout.registerComponent( 'stock-detail', StockDetail );
     myLayout.init();
 
     return (
