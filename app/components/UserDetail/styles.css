@@ -1,0 +1,22 @@
+.userdetails {
+    color: #fff;
+    font: 12px Arial, sans-serif;
+}
+
+.userdetails *{
+  color: #fff;
+}
+
+.userdetails{
+    padding: 10px;
+    overflow: hidden;
+}
+
+.userdetails img{
+    float: left;
+    margin-right: 10px;
+}
+
+.userdetails h2{
+    margin-top: 0;
+}
