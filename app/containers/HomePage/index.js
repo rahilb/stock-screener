@@ -13,8 +13,8 @@ import $ from "jquery";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import GoldenLayout from 'golden-layout';
-import StockList from '../../components/StockList/index.js'
-import StockDetail from '../../components/StockDetail/index.js'
+import StockList from '../../components/StockList/stockList.js'
+import StockDetail from '../../components/StockDetail/stockDetail.js'
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -27,7 +27,7 @@ export default class HomePage extends React.Component { // eslint-disable-line r
         content: [{
           title: 'Stocks',
           type:'react-component',
-          component: 'stock-list'
+          component: 'stock-list' 
         },{
           title: 'Stock Detail',
           type:'react-component',
